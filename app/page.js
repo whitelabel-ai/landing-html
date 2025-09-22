@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import BackToTop from "./components/BackToTop";
+import Preloader from "./components/Preloader";
+import Header from "./components/Header";
+import Offcanvas from "./components/Offcanvas";
+import BodyOverlay from "./components/BodyOverlay";
 
 export default function Page() {
   const [html, setHtml] = useState("");
+  const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -20,7 +26,24 @@ export default function Page() {
         const tpl = document.createElement("template");
         tpl.innerHTML = bodyInner;
         tpl.content.querySelectorAll("script").forEach((s) => s.remove());
-        // Eliminar preloader/loader del fragmento antes de inyectar (amplio)
+        // Eliminar elementos que reemplazamos con React: preloader, loader, back-to-top, header, offcanvas y overlay
+        const stripSelectors = [
+          "#preloader",
+          "#loading",
+          ".preloader",
+          "[class*='preload']",
+          "[id*='preload']",
+          "[class*='loader']",
+          "[id*='loader']",
+          ".back-to-top-wrapper",
+          "header",
+          ".tp-offcanvas-area",
+          ".tp-offcanvas-2-area",
+          ".body-overlay",
+        ];
+        // Quitar del fragmento inyectado (incluye header del template)
+        tpl.content.querySelectorAll(stripSelectors.join(",")).forEach((el) => el.remove());
+        // Selectores para limpieza runtime (excluye 'header' para no borrar el componente React)
         const overlaySelectors = [
           "#preloader",
           "#loading",
@@ -29,8 +52,11 @@ export default function Page() {
           "[id*='preload']",
           "[class*='loader']",
           "[id*='loader']",
+          ".back-to-top-wrapper",
+          ".tp-offcanvas-area",
+          ".tp-offcanvas-2-area",
+          ".body-overlay",
         ];
-        tpl.content.querySelectorAll(overlaySelectors.join(",")).forEach((el) => el.remove());
         const cleanBody =
           tpl.innerHTML ||
           Array.from(tpl.content.childNodes)
@@ -136,7 +162,23 @@ export default function Page() {
     };
   }, []);
 
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <>
+      <Preloader enabled={true} timeout={0} />
+      <Header
+        onOpenOffcanvas={() => setOffcanvasOpen(true)}
+        navItems={[]}
+      />
+      <Offcanvas
+        open={offcanvasOpen}
+        onClose={() => setOffcanvasOpen(false)}
+        navItems={[]}
+      />
+      <BodyOverlay open={offcanvasOpen} onClick={() => setOffcanvasOpen(false)} />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <BackToTop threshold={200} smooth={true} />
+    </>
+  );
 }
 
 function loadScript(src, type) {
