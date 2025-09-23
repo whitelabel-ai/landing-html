@@ -6,6 +6,9 @@ import Preloader from "./components/Preloader";
 import Header from "./components/Header";
 import Offcanvas from "./components/Offcanvas";
 import BodyOverlay from "./components/BodyOverlay";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Steps from "./components/Steps";
 
 export default function Page() {
   const [html, setHtml] = useState("");
@@ -26,6 +29,17 @@ export default function Page() {
         const tpl = document.createElement("template");
         tpl.innerHTML = bodyInner;
         tpl.content.querySelectorAll("script").forEach((s) => s.remove());
+
+        // Desenrollar wrappers de smooth scroll para evitar ScrollSmoother fijo
+        ["#smooth-content", "#smooth-wrapper"].forEach((sel) => {
+          const el = tpl.content.querySelector(sel);
+          if (el && el.parentNode) {
+            while (el.firstChild) {
+              el.parentNode.insertBefore(el.firstChild, el);
+            }
+            el.remove();
+          }
+        });
         // Eliminar elementos que reemplazamos con React: preloader, loader, back-to-top, header, offcanvas y overlay
         const stripSelectors = [
           "#preloader",
@@ -40,6 +54,9 @@ export default function Page() {
           ".tp-offcanvas-area",
           ".tp-offcanvas-2-area",
           ".body-overlay",
+          ".dgm-hero-top",
+          ".dgm-about-area",
+          ".dgm-step-area",
         ];
         // Quitar del fragmento inyectado (incluye header del template)
         tpl.content.querySelectorAll(stripSelectors.join(",")).forEach((el) => el.remove());
@@ -175,6 +192,9 @@ export default function Page() {
         navItems={[]}
       />
       <BodyOverlay open={offcanvasOpen} onClick={() => setOffcanvasOpen(false)} />
+      <Hero />
+      <About />
+      <Steps />
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <BackToTop threshold={200} smooth={true} />
     </>
