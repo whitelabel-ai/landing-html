@@ -9,6 +9,11 @@ import BodyOverlay from "./components/BodyOverlay";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Steps from "./components/Steps";
+import Brand from "./components/Brand";
+import Project from "./components/Project";
+// import Team from "./components/Team";
+import Testimonial from "./components/Testimonial";
+// import Footer from "./components/Footer";
 
 export default function Page() {
   const [html, setHtml] = useState("");
@@ -57,6 +62,14 @@ export default function Page() {
           ".dgm-hero-top",
           ".dgm-about-area",
           ".dgm-step-area",
+          ".tp-brand-area",
+          // keep project, team and footer from HTML for now
+          // ".dgm-project-area",
+          // ".dgm-team-area",
+          ".dgm-testimonial-area",
+          // "footer",
+          // ".dgm-footer-area",
+          // ".tp-copyright-2-area",
         ];
         // Quitar del fragmento inyectado (incluye header del template)
         tpl.content.querySelectorAll(stripSelectors.join(",")).forEach((el) => el.remove());
@@ -69,7 +82,7 @@ export default function Page() {
           "[id*='preload']",
           "[class*='loader']",
           "[id*='loader']",
-          ".back-to-top-wrapper",
+          // removed ".back-to-top-wrapper" to preserve React BackToTop component
           ".tp-offcanvas-area",
           ".tp-offcanvas-2-area",
           ".body-overlay",
@@ -195,7 +208,12 @@ export default function Page() {
       <Hero />
       <About />
       <Steps />
+      <Brand />
+      {/* <Project /> */}
+      {/* <Team /> */}
+      <Testimonial />
       <div dangerouslySetInnerHTML={{ __html: html }} />
+      {/* <Footer /> */}
       <BackToTop threshold={200} smooth={true} />
     </>
   );

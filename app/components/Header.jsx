@@ -8,15 +8,14 @@ export default function Header({ navItems = [], onOpenOffcanvas }) {
   useEffect(() => {
     const el = stickyRef.current;
     if (!el) return;
-    // Replicar sticky behavior: add/remove .header-sticky and handle logo swap classes
+    // Replicar sticky behavior: add/remove .header-sticky y manejar clases de logo
     const onScroll = () => {
       const add = window.scrollY > 10;
       el.classList.toggle("header-sticky", add);
-      // Toggle sticky color scheme if required by template classes
       const isDarkSticky = el.classList.contains("sticky-black-bg");
       const isWhiteSticky = el.classList.contains("sticky-white-bg");
       if (isDarkSticky || isWhiteSticky) {
-        // template switches logo classes via CSS based on .header-sticky + scheme classes
+        // El template alterna logos vía CSS según .header-sticky + esquema
       }
     };
     onScroll();
@@ -61,6 +60,18 @@ export default function Header({ navItems = [], onOpenOffcanvas }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    {/* Icono original del template */}
+                    <i>
+                      <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16 2.5C16 1.675 15.325 1 14.5 1H2.5C1.675 1 1 1.675 1 2.5M16 2.5V11.5C16 12.325 15.325 13 14.5 13H2.5C1.675 13 1 12.325 1 11.5V2.5M16 2.5L8.5 7.75L1 2.5"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </i>
                     <span>
                       <span className="text-1">Hablemos</span>
                       <span className="text-2">Hablemos</span>
