@@ -7,21 +7,21 @@ export default function Blog() {
       date: "Aug 12, 2024",
       category: "Engineering",
       title: "How we deliver faster with solid processes",
-      img: "assets/img/home-03/blog/blog-01.jpg",
+      img: "/assets/img/home-03/blog/blog-01.jpg",
     },
     {
       author: "Devgen & Media",
       date: "Sep 01, 2024",
       category: "Design",
       title: "Design systems that scale across products",
-      img: "assets/img/home-03/blog/blog-02.jpg",
+      img: "/assets/img/home-03/blog/blog-02.jpg",
     },
     {
       author: "Devgen & Media",
       date: "Oct 07, 2024",
       category: "Product",
       title: "Validating ideas quickly with prototypes",
-      img: "assets/img/home-03/blog/blog-03.jpg",
+      img: "/assets/img/home-03/blog/blog-03.jpg",
     },
   ];
 

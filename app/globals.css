@@ -52,3 +52,66 @@ body {
     color-scheme: dark;
   }
 }
+
+/* ===== Brand overrides: mantener texto y punto en la misma línea y ajustar espaciado en móviles ===== */
+/* Evita que el texto y el pseudo-elemento (::after) se separen */
+.tp-brand-wrapper .tp-brand-title {
+  white-space: nowrap !important;
+}
+
+/* Reducir ligeramente el margen del punto en pantallas pequeñas para evitar cortes */
+@media (max-width: 576px) {
+  .tp-brand-wrapper .tp-brand-title::after {
+    margin-left: 16px !important;
+  }
+  .tp-brand-style-2 .tp-brand-title::after {
+    margin-right: 16px !important;
+  }
+}
+
+/* Asegurar que cada item se mida por su contenido, evitando wraps inesperados */
+.tp-brand-active .swiper-slide {
+  width: auto !important;
+}
+
+/* Easing lineal para un scroll continuo sin pausas */
+.tp-brand-active .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+/* ===== Header overrides: tamaño del logo ===== */
+.tp-header-logo img {
+  width: auto !important;
+  height: auto !important;
+  max-width: clamp(100px, 10vw, 140px) !important;
+}
+
+@media (max-width: 767px) {
+  .tp-header-logo img {
+    max-width: 110px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-header-logo img {
+    max-width: 120px !important;
+  }
+}
+
+/* Asegurar que el contenedor no permita overflow visual */
+.tp-header-logo {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* ===== Anti overflow-x para secciones con hijos absolutos ===== */
+.dgm-hero-top,
+.dgm-hero-ptb,
+.dgm-step-area,
+.dgm-about-area,
+.tp-brand-area,
+.tp-brand-active {
+  overflow-x: clip !important; /* Evita scroll horizontal por subpíxeles/offsets negativos */
+  overflow-y: visible !important; /* Mantener visibilidad vertical */
+}

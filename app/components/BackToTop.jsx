@@ -58,12 +58,8 @@ export default function BackToTop({ threshold = 200, smooth = true }) {
       className={`back-to-top-wrapper${visible ? " back-to-top-btn-show" : ""}`}
       style={{
         position: "fixed",
-        right: 20,
+        right: 80, // antes 20, dejamos espacio para el ChatBubble a la derecha
         bottom: visible ? 50 : 0,
-        height: 44,
-        width: 44,
-        cursor: "pointer",
-        borderRadius: "50%",
         zIndex: 99,
         opacity: visible ? 1 : 0,
         visibility: visible ? "visible" : "hidden",
@@ -77,16 +73,22 @@ export default function BackToTop({ threshold = 200, smooth = true }) {
         onClick={scrollToTop}
         aria-label="Volver arriba"
       >
-        {/* Icono simple compatible con los estilos del template */}
+        {/* Icono del template (chevron up) */}
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
-          <path d="M12 4l-7 7h4v7h6v-7h4l-7-7z" fill="currentColor" />
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
     </div>

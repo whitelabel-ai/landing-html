@@ -1,5 +1,7 @@
 "use client";
 
+import Counter from "./Counter";
+
 export default function Hero() {
   return (
     <section className="dgm-hero-top pt-20">
@@ -55,7 +57,7 @@ export default function Hero() {
               <div className="dgm-hero-funfact-wrap row g-3 g-sm-4">
                 <div className="col-6 col-sm-4">
                   <div className="dgm-hero-funfact tp_fade_anim mb-40" data-delay=".7" data-fade-from="top" data-ease="bounce">
-                    <span><i data-purecounter-duration="1" data-purecounter-end="98" className="purecounter">0</i>%</span>
+                    <span><Counter className="purecounter" start={0} end={98} duration={1000} />%</span>
                     <p>Clientes satisfechos que vuelven</p>
                   </div>
                 </div>
@@ -75,17 +77,6 @@ export default function Hero() {
                   <img src="/assets/img/home-03/hero/hi-shape.png" alt="Hola" />
                   <p>Construimos tu idea y automatizamos lo repetitivo.</p>
                 </div>
-                <a
-                  className="dgm-hero-arrow"
-                  href="https://wa.me/573112530069?text=Hola%20Quisiera%20saber%20m%C3%A1s%20sobre%20las%20automatizaciones"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Ir a WhatsApp"
-                >
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 10h16M12 4l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
