@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
-export default function Header({ navItems = [], onOpenOffcanvas }) {
+export const Header = ({ navItems = [] }) => {
   const stickyRef = useRef(null);
 
   useEffect(() => {
@@ -12,24 +12,19 @@ export default function Header({ navItems = [], onOpenOffcanvas }) {
     const onScroll = () => {
       const add = window.scrollY > 10;
       el.classList.toggle("header-sticky", add);
-      const isDarkSticky = el.classList.contains("sticky-black-bg");
-      const isWhiteSticky = el.classList.contains("sticky-white-bg");
-      if (isDarkSticky || isWhiteSticky) {
-        // El template alterna logos vía CSS según .header-sticky + esquema
-      }
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+    };
   }, []);
 
   return (
     <header>
-      {/* header area start */}
       <div
-        id="header-sticky"
         ref={stickyRef}
-        className="tp-header-area tp-header-ptb tp-header-blur sticky-black-bg header-transparent tp-header-3-style"
+        className="tp-header-area tp-header-ptb tp-header-blur sticky-black-bg header-transparent tp-header-3-style z200"
       >
         <div className="container container-1750">
           <div className="row align-items-center">
@@ -83,7 +78,6 @@ export default function Header({ navItems = [], onOpenOffcanvas }) {
           </div>
         </div>
       </div>
-      {/* header area end */}
     </header>
   );
-}
+};

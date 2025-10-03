@@ -1,0 +1,36 @@
+.area {
+  background: #0f1012;
+  color: #e2e8f0;
+}
+
+.intro {
+  color: #e6edf3;
+}
+
+.subtitle {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #f1f5f9;
+  font-size: 20px;
+}
+
+.list {
+  margin: 10px 0 16px;
+  padding-left: 18px;
+
+  > li {
+    margin-bottom: 6px;
+    color: #e6edf3;
+  }
+}
+
+.content {
+  p {
+    line-height: 1.75;
+    color: #e2e8f0;
+  }
+}
+
+.subtitleBlack {
+  color: #e6edf3;
+}
