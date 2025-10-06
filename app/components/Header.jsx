@@ -29,7 +29,7 @@ export default function Header({ navItems = [], onOpenOffcanvas }) {
       <div
         id="header-sticky"
         ref={stickyRef}
-        className="tp-header-area tp-header-ptb tp-header-blur sticky-black-bg header-transparent tp-header-3-style"
+        className="tp-header-area tp-header-ptb tp-header-blur sticky-black-bg header-transparent tp-header-3-style z-index-1000"
       >
         <div className="container container-1750">
           <div className="row align-items-center">

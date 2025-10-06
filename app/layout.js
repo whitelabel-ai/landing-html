@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/spacing.css" />
         <link rel="stylesheet" href="/assets/css/atropos.min.css" />
         <link rel="stylesheet" href="/assets/css/main.css" />
-        <link rel="icon" href="/assets/img/favicon/logo.png" />
+        <link rel="icon" href="/assets/img/favicon/logo.png" type="image/png" />
       </head>
       <body className="tp-magic-cursor">{children}</body>
     </html>

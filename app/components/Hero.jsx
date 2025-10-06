@@ -1,6 +1,7 @@
 "use client";
 
 import Counter from "./Counter";
+import Chat from "./Chat";
 
 export default function Hero() {
   return (
@@ -63,7 +64,7 @@ export default function Hero() {
                 </div>
                 <div className="col-6 col-sm-4">
                   <div className="dgm-hero-funfact tp_fade_anim mb-40" data-delay=".9" data-fade-from="top" data-ease="bounce">
-                    <span><i data-purecounter-duration="1" data-purecounter-end="125" className="purecounter">0</i>+</span>
+                    <span><Counter className="purecounter" start={0} end={125} duration={1000} />+</span>
                     <p>MVPs y proyectos<br /> entregados</p>
                   </div>
                 </div>
@@ -71,12 +72,9 @@ export default function Hero() {
             </div>
 
             <div className="col-12 col-lg-5">
-              <div className="dgm-hero-thumb anim-zoomin-wrap">
-                <img src="/assets/img/home-03/hero/bg.png" alt="Fondo hero" />
-                <div className="dgm-hero-text-box" data-background="/assets/img/home-03/hero/hero-text-shape.png" style={{ backgroundImage: "url('/assets/img/home-03/hero/hero-text-shape.png')" }}>
-                  <img src="/assets/img/home-03/hero/hi-shape.png" alt="Hola" />
-                  <p>Construimos tu idea y automatizamos lo repetitivo.</p>
-                </div>
+              <div className="dgm-hero-thumb" style={{ padding: "0 30px" }}>
+                {/* Chat embebido ocupando el panel derecho del hero */}
+                <Chat height={620} style={{ marginTop: 70 }} />
               </div>
             </div>
           </div>

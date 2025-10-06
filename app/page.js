@@ -11,7 +11,6 @@ import About from "./components/About";
 import Steps from "./components/Steps";
 import Brand from "./components/Brand";
 import Project from "./components/Project";
-import Chat from "./components/Chat";
 // import Team from "./components/Team";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
@@ -42,8 +41,6 @@ export default function Page() {
       />
       <BodyOverlay open={offcanvasOpen} onClick={() => setOffcanvasOpen(false)} />
       <Hero />
-      {/* Chat en modo sección justo después del Hero */}
-      <Chat variant="section" />
       <About />
       <Steps />
       <Brand />

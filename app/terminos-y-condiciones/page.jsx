@@ -10,53 +10,121 @@ export default function TerminosYCondicionesPage() {
           <div className="col-lg-10">
             <header className="mb-30">
               <span className="tp-section-subtitle subtitle-black mb-15">Legal</span>
-              <h2 id="terms-title" className="tp-section-title-grotesk">Términos y Condiciones</h2>
-              <p className="legal-intro mt-15">Estos términos aplican al uso de la plataforma Whitelabel, propiedad de Whitelabel SAS.</p>
+              <h2 id="terms-title" className="tp-section-title-grotesk">Términos y Condiciones de Uso — Plataforma Whitelabel</h2>
+              <p className="legal-intro mt-15">Última actualización: 01/10/2025</p>
+              <p className="legal-intro">Titular: Whitelabel SAS</p>
+              <p className="legal-intro">NIT: 901086196-2</p>
+              <p className="legal-intro">Correo de contacto: legal@whitelabel.lat</p>
             </header>
 
             <article className="legal-content">
               <h3 className="legal-subtitle">1. Introducción</h3>
               <p>
-                Estos términos y condiciones regulan el uso de la plataforma Whitelabel, propiedad de Whitelabel SAS. Al utilizar nuestros servicios, el cliente acepta estas condiciones en su totalidad. Si no está de acuerdo, deberá abstenerse de utilizar la plataforma.
+                El presente documento regula el acceso y uso de la plataforma Whitelabel, propiedad de Whitelabel SAS, sociedad legalmente constituida en Colombia.
+              </p>
+              <p>
+                Al acceder, registrarse o utilizar los servicios, el cliente declara haber leído, comprendido y aceptado plenamente estos Términos y Condiciones. Si no está de acuerdo, deberá abstenerse de usar la plataforma.
               </p>
 
               <h3 className="legal-subtitle">2. Definiciones</h3>
               <ul className="legal-list">
-                <li><strong>Plataforma Whitelabel:</strong> Plataforma de inteligencia artificial desarrollada por Whitelabel SAS para gestionar mensajes y llamadas inbound y outbound de manera automatizada.</li>
-                <li><strong>Cliente:</strong> Usuario titular de una suscripción activa en la plataforma.</li>
-                <li><strong>Créditos:</strong> Unidad de uso en la plataforma Whitelabel que permite enviar mensajes o realizar llamadas.</li>
-                <li><strong>Torre de Control:</strong> Plataforma interna donde los clientes gestionan sus créditos, configuración y reportes.</li>
-                <li><strong>Datos:</strong> Toda información generada a través de la plataforma, incluyendo mensajes, grabaciones y metadatos.</li>
+                <li><strong>Plataforma Whitelabel:</strong> Sistema de inteligencia artificial desarrollado por Whitelabel SAS que permite la gestión automatizada de mensajes, llamadas y flujos de atención.</li>
+                <li><strong>Cliente:</strong> Persona natural o jurídica titular de una cuenta o suscripción activa en la plataforma.</li>
+                <li><strong>Usuarios finales:</strong> Personas cuyos datos o interacciones son procesados a través de la plataforma del cliente.</li>
+                <li><strong>Créditos:</strong> Unidad de uso que permite ejecutar funciones dentro de la plataforma (mensajes, llamadas, procesos automáticos, etc.).</li>
+                <li><strong>Torre de Control:</strong> Panel administrativo donde los clientes gestionan sus créditos, configuración, integraciones y reportes.</li>
+                <li><strong>Datos:</strong> Toda información procesada por la plataforma, incluyendo mensajes, grabaciones, logs, metadatos o resultados de modelos de IA.</li>
               </ul>
 
               <h3 className="legal-subtitle">3. Propiedad, Custodia y Privacidad de los Datos</h3>
-              <p><strong>Propiedad:</strong> Los datos generados en la plataforma Whitelabel son propiedad de Whitelabel SAS, que actúa como responsable del tratamiento de acuerdo con las leyes aplicables. Los clientes tienen acceso y uso limitado de los datos según las políticas de privacidad de Whitelabel SAS.</p>
-              <p><strong>Consentimiento:</strong> Los clientes deberán aceptar las políticas de privacidad de Whitelabel SAS como parte del registro y uso de la plataforma Whitelabel. Esto incluye garantizar que informan y obtienen el consentimiento de sus propios usuarios finales para el tratamiento de sus datos personales.</p>
-              <p><strong>Privacidad y seguridad:</strong> Whitelabel SAS custodia los datos bajo estándares de seguridad reconocidos internacionalmente y cumple con las leyes colombianas (Ley 1581 de 2012) y el Reglamento General de Protección de Datos (GDPR).</p>
-              <p><strong>Respaldo y eliminación:</strong> Los datos serán respaldados periódicamente y eliminados automáticamente 90 días después de la terminación del contrato, salvo requerimientos legales que indiquen lo contrario.</p>
+              <p>
+                <strong>3.1 Propiedad de los datos.</strong> Los datos procesados a través de la plataforma son propiedad del cliente. Whitelabel SAS actúa como encargado del tratamiento, limitando su uso a la prestación, mantenimiento y mejora del servicio.
+              </p>
+              <p>
+                <strong>3.2 Responsabilidad sobre usuarios finales.</strong> El cliente es el responsable del tratamiento respecto de los datos de sus usuarios finales. Se compromete a garantizar que dichos usuarios han otorgado su consentimiento informado conforme a la legislación aplicable (Ley 1581/2012, GDPR u otra según jurisdicción).
+              </p>
+              <p>
+                <strong>3.3 Custodia y seguridad.</strong> Whitelabel SAS implementa medidas técnicas y organizativas apropiadas conforme a estándares internacionales (ISO/IEC 27001, NIST SP 800-53) para garantizar la confidencialidad, integridad y disponibilidad de los datos. Los datos se almacenan en servidores dedicados protegidos mediante VPN y protocolos de cifrado en tránsito y en reposo.
+              </p>
+              <p>
+                <strong>3.4 Respaldo, retención y eliminación.</strong> Los datos se respaldan periódicamente y se conservan hasta 90 días después de la terminación del contrato. Antes de su eliminación, el cliente podrá solicitar una copia de respaldo mediante correo a privacidad@whitelabel.lat. Whitelabel podrá conservar datos de manera anonimizada por motivos estadísticos o de auditoría técnica.
+              </p>
 
               <h3 className="legal-subtitle">4. Servicios</h3>
-              <p>La plataforma Whitelabel ofrece una plataforma tecnológica que permite la gestión automatizada de mensajes y llamadas. Los servicios incluyen:</p>
+              <p>La plataforma Whitelabel ofrece servicios tecnológicos que incluyen:</p>
               <ul className="legal-list">
-                <li><strong>Automatización:</strong> Envío y recepción de mensajes y llamadas mediante inteligencia artificial.</li>
-                <li><strong>Gestión:</strong> Control de créditos, reportes detallados y configuración personalizada a través de la Torre de Control.</li>
-                <li><strong>Soporte:</strong> Asistencia técnica para garantizar la continuidad del servicio.</li>
+                <li><strong>Automatización:</strong> Gestión automatizada de mensajes, llamadas e interacciones mediante inteligencia artificial.</li>
+                <li><strong>Gestión:</strong> Control de créditos, reportes, métricas y configuración personalizada desde la Torre de Control.</li>
+                <li><strong>Soporte:</strong> Asistencia técnica a través de los canales habilitados, en horarios definidos en la documentación oficial.</li>
+              </ul>
+              <p>Whitelabel podrá actualizar, modificar o suspender temporalmente funcionalidades sin previo aviso cuando sea necesario por razones técnicas o de seguridad.</p>
+
+              <h3 className="legal-subtitle">5. Propiedad Intelectual</h3>
+              <p>
+                Todo el software, interfaces, código fuente, diseños, modelos de IA, documentación técnica, marcas y demás activos intangibles relacionados con la plataforma son propiedad exclusiva de Whitelabel SAS.
+              </p>
+              <p>
+                Nada en este contrato otorga licencia o cesión de derechos de propiedad intelectual al cliente, salvo el derecho limitado de uso previsto en estos Términos.
+              </p>
+
+              <h3 className="legal-subtitle">6. Obligaciones del Cliente</h3>
+              <ul className="legal-list">
+                <li>Usar la plataforma conforme a la ley y estos Términos.</li>
+                <li>No realizar ingeniería inversa, descompilación ni extracción de modelos de IA o estructuras de datos.</li>
+                <li>Mantener la confidencialidad de sus credenciales de acceso.</li>
+                <li>Garantizar la veracidad de la información proporcionada y actualizarla oportunamente.</li>
+                <li>Obtener los consentimientos requeridos de sus usuarios finales.</li>
               </ul>
 
-              <h3 className="legal-subtitle">5. Obligaciones del Cliente</h3>
+              <h3 className="legal-subtitle">7. Pagos y Facturación</h3>
               <ul className="legal-list">
-                <li><strong>Uso adecuado:</strong> El cliente se compromete a utilizar la plataforma de manera responsable, evitando actividades ilícitas o no autorizadas.</li>
-                <li><strong>Información precisa:</strong> El cliente deberá proporcionar información veraz y actualizada durante el registro y uso del servicio.</li>
-                <li><strong>Confidencialidad:</strong> Mantener la confidencialidad de sus credenciales de acceso y reportar inmediatamente cualquier uso no autorizado.</li>
+                <li><strong>Métodos de pago:</strong> Transferencias electrónicas, tarjetas de crédito o cualquier método habilitado.</li>
+                <li><strong>Facturación:</strong> Se emitirá factura electrónica mensual con el detalle de consumos y créditos utilizados.</li>
+                <li><strong>Incumplimiento:</strong> La falta de pago dentro del plazo acordado podrá resultar en suspensión temporal del servicio.</li>
+                <li><strong>Retención de datos:</strong> Durante la suspensión, Whitelabel conservará los datos del cliente por 30 días, permitiendo su reactivación una vez se regularice el pago.</li>
               </ul>
 
-              <h3 className="legal-subtitle">6. Pagos</h3>
-              <p>Los pagos por los servicios de la plataforma Whitelabel se realizarán de acuerdo con los planes seleccionados por el cliente. Las condiciones incluyen:</p>
+              <h3 className="legal-subtitle">8. Limitación de Responsabilidad</h3>
               <ul className="legal-list">
-                <li><strong>Métodos de pago:</strong> Transferencias electrónicas, tarjetas de crédito o cualquier método habilitado en la plataforma.</li>
-                <li><strong>Facturación:</strong> Los clientes recibirán una factura electrónica mensual con el detalle de los servicios utilizados.</li>
-                <li><strong>Suspensión:</strong> El incumplimiento en los pagos podrá resultar en la suspensión temporal o definitiva del servicio.</li>
+                <li>Daños indirectos, pérdida de beneficios o datos.</li>
+                <li>Fallos derivados de proveedores externos (OpenAI, Meta, Google, AWS, etc.).</li>
+                <li>Interrupciones del servicio causadas por mantenimiento, fallos técnicos o fuerza mayor.</li>
               </ul>
+              <p>
+                La responsabilidad total de Whitelabel frente al cliente se limitará al valor pagado por el servicio en los últimos tres (3) meses previos al evento.
+              </p>
+
+              <h3 className="legal-subtitle">9. Confidencialidad</h3>
+              <p>
+                Ambas partes se obligan a mantener la confidencialidad de toda la información técnica, comercial o estratégica obtenida durante la relación contractual, incluso después de su terminación.
+              </p>
+              <p>
+                Esta obligación no aplica a información pública o legalmente requerida por autoridad competente.
+              </p>
+
+              <h3 className="legal-subtitle">10. Terminación</h3>
+              <p>El cliente podrá cancelar su cuenta en cualquier momento.</p>
+              <p>Whitelabel podrá suspender o terminar el acceso en caso de incumplimiento grave de estos Términos o uso indebido del servicio.</p>
+              <p>La terminación no libera al cliente de sus obligaciones económicas pendientes.</p>
+
+              <h3 className="legal-subtitle">11. Notificaciones y solicitudes de privacidad</h3>
+              <p>Las solicitudes relacionadas con datos personales deberán enviarse a:</p>
+              <ul className="legal-list">
+                <li>📧 <a href="mailto:legal@whitelabel.lat">legal@whitelabel.lat</a></li>
+                <li>Incluir identificación del solicitante y descripción clara de la solicitud (acceso, rectificación, cancelación u oposición).</li>
+              </ul>
+
+              <h3 className="legal-subtitle">12. Ley aplicable y jurisdicción</h3>
+              <p>Estos Términos se rigen por las leyes de la República de Colombia.</p>
+              <p>Cualquier controversia será resuelta por los tribunales de la ciudad de Bogotá, salvo acuerdo diferente entre las partes.</p>
+
+              <h3 className="legal-subtitle">13. Modificaciones</h3>
+              <p>Whitelabel SAS podrá actualizar estos Términos y Condiciones en cualquier momento.</p>
+              <p>
+                Las modificaciones se publicarán en {" "}
+                <a href="https://whitelabel.lat/terminos" target="_blank" rel="noopener noreferrer">https://whitelabel.lat/terminos</a>{" "}
+                y entrarán en vigor a los 10 días calendario de su publicación.
+              </p>
             </article>
 
             <div className="mt-40">

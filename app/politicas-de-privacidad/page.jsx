@@ -10,92 +10,137 @@ export default function PoliticasDePrivacidadPage() {
           <div className="col-lg-10">
             <header className="mb-30">
               <span className="tp-section-subtitle subtitle-black mb-15">Legal</span>
-              <h2 id="legal-title" className="tp-section-title-grotesk">Políticas de Privacidad</h2>
-              <p className="legal-intro mt-15">Esta política aplica a los servicios de Whitelabel SAS prestados a través de la plataforma Whitelabel.</p>
+              <h2 id="legal-title" className="tp-section-title-grotesk">Política de Privacidad — Whitelabel SAS</h2>
+              <p className="legal-intro mt-15">Última actualización: 01/10/2021</p>
+              <ul className="legal-list">
+                <li><strong>Titular:</strong> Whitelabel SAS</li>
+                <li><strong>Correo de contacto:</strong> <a href="mailto:legal@whitelabel.lat">legal@whitelabel.lat</a></li>
+              </ul>
             </header>
 
             <article className="legal-content">
               <h3 className="legal-subtitle">1. Introducción</h3>
               <p>
-                Whitelabel SAS, una empresa especializada en soluciones de agentes inteligentes impulsados por inteligencia artificial, se compromete firmemente a proteger la privacidad y seguridad de los datos personales recopilados a través de nuestra plataforma Whitelabel. Este compromiso está respaldado por el cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013, y otras normativas internacionales aplicables. Al utilizar los servicios de la plataforma Whitelabel, tanto nuestros clientes como los usuarios finales de sus servicios reconocen y aceptan los términos descritos en esta política de privacidad.
+                Whitelabel SAS, sociedad legalmente constituida en Colombia, se dedica al desarrollo de soluciones de automatización e inteligencia artificial para procesos empresariales. Esta Política describe cómo recolectamos, usamos, almacenamos y protegemos los datos personales obtenidos a través de nuestra plataforma Whitelabel, en cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013, y estándares internacionales como el Reglamento General de Protección de Datos (GDPR).
               </p>
+              <p>El uso de nuestros servicios implica la aceptación expresa de esta Política. Si no está de acuerdo, debe abstenerse de usar la plataforma.</p>
 
-              <h3 className="legal-subtitle">2. Responsable del tratamiento de datos</h3>
-              <p>
-                Whitelabel SAS actúa como el responsable del tratamiento de los datos personales recolectados a través de la plataforma Whitelabel, garantizando su manejo ético y conforme a la ley.
-              </p>
+              <h3 className="legal-subtitle">2. Responsable y Encargado del Tratamiento</h3>
               <ul className="legal-list">
-                <li><strong>Razón social:</strong> Whitelabel SAS</li>
+                <li><strong>Responsable del Tratamiento:</strong> Whitelabel SAS</li>
                 <li><strong>NIT:</strong> 901086196-2</li>
                 <li><strong>Dirección:</strong> Cra 20 N° 6-65, Girardot, Cundinamarca, Colombia</li>
-                <li><strong>Correo electrónico:</strong> hola@whitelabel.lat</li>
+                <li><strong>Correo electrónico:</strong> <a href="mailto:legal@whitelabel.lat">legal@whitelabel.lat</a></li>
                 <li><strong>Teléfono:</strong> +57 311 253 0069</li>
               </ul>
-              <p>Para consultas relacionadas con el tratamiento de datos personales, estamos disponibles en los canales mencionados anteriormente.</p>
-
-              <h3 className="legal-subtitle">3. Datos que recopilamos</h3>
-              <p>Recopilamos los siguientes datos personales con el propósito de prestar y optimizar nuestros servicios:</p>
+              <p><strong>Whitelabel actúa como:</strong></p>
               <ul className="legal-list">
-                <li><strong>Datos del cliente:</strong> Nombre completo, NIT, dirección de correo electrónico, número de teléfono, dirección física y detalles de facturación.</li>
-                <li><strong>Datos de los usuarios finales:</strong> Información proporcionada durante interacciones como nombres, apellidos, números de teléfono, direcciones de correo electrónico, contenido de mensajes y grabaciones de llamadas.</li>
-                <li><strong>Datos técnicos:</strong> Información del dispositivo, tipo de navegador y datos generales de geolocalización obtenidos a través de herramientas analíticas como Google Analytics.</li>
+                <li><strong>Responsable del tratamiento</strong> respecto a los datos de sus propios clientes y usuarios registrados directamente.</li>
+                <li><strong>Encargado del tratamiento</strong> respecto a los datos que los clientes recopilan de sus usuarios finales a través de la plataforma.</li>
               </ul>
-              <p>La recopilación de estos datos se realiza de manera transparente y con el conocimiento de los titulares involucrados.</p>
 
-              <h3 className="legal-subtitle">4. Finalidades del tratamiento de datos</h3>
-              <p>Utilizamos los datos recopilados para los siguientes fines específicos:</p>
+              <h3 className="legal-subtitle">3. Datos que Recopilamos</h3>
+              <p>Whitelabel puede recopilar las siguientes categorías de datos personales:</p>
               <ul className="legal-list">
-                <li><strong>Prestación del servicio:</strong> Garantizar el funcionamiento correcto y eficiente de la plataforma Whitelabel, facilitando la comunicación y el intercambio de información entre clientes y usuarios finales.</li>
-                <li><strong>Cumplimiento normativo:</strong> Asegurar que nuestras operaciones cumplan con las leyes y regulaciones aplicables, incluyendo la protección de datos personales.</li>
-                <li><strong>Mejora continua:</strong> Analizar las interacciones para identificar áreas de mejora y optimizar nuestros servicios.</li>
-                <li><strong>Comunicación comercial:</strong> Informar a nuestros clientes sobre actualizaciones, nuevos productos y servicios relevantes para su actividad.</li>
+                <li><strong>Datos de identificación:</strong> nombres, apellidos, número de identificación, razón social, NIT, correo electrónico, teléfono, dirección.</li>
+                <li><strong>Datos de uso del servicio:</strong> registros de acceso, IP, geolocalización aproximada, navegador, dispositivo, cookies, logs del sistema.</li>
+                <li><strong>Datos operativos:</strong> mensajes, grabaciones, prompts, transcripciones y resultados de interacciones con agentes automatizados.</li>
+                <li><strong>Datos de facturación:</strong> información de pagos, historial de créditos, plan adquirido y consumos.</li>
               </ul>
-              <p>Los datos serán tratados exclusivamente para los fines descritos y bajo estrictas medidas de seguridad.</p>
+              <p>No recolectamos datos sensibles salvo que sean estrictamente necesarios para la prestación del servicio y siempre con consentimiento explícito.</p>
 
-              <h3 className="legal-subtitle">5. Relación con los usuarios finales</h3>
+              <h3 className="legal-subtitle">4. Finalidades del Tratamiento</h3>
+              <p>Los datos personales se utilizan exclusivamente para las siguientes finalidades legítimas:</p>
+              <ul className="legal-list">
+                <li><strong>Prestación del servicio:</strong> habilitar y mantener el funcionamiento técnico de la plataforma.</li>
+                <li><strong>Mejora y soporte:</strong> diagnosticar fallas, analizar métricas de rendimiento y ofrecer soporte técnico.</li>
+                <li><strong>Cumplimiento legal y contractual:</strong> emitir facturas, gestionar pagos y cumplir obligaciones tributarias o regulatorias.</li>
+                <li><strong>Comunicaciones operativas y comerciales:</strong> enviar notificaciones de servicio, actualizaciones o información relevante sobre nuevos productos.</li>
+                <li><strong>Seguridad y auditoría:</strong> monitorear accesos, prevenir fraudes y proteger la integridad de la información.</li>
+                <li><strong>Entrenamiento contextual de IA:</strong> mejorar la precisión de respuestas dentro del contexto del cliente, sin reutilizar datos para otros fines (ni entrenamiento global de modelos).</li>
+              </ul>
+
+              <h3 className="legal-subtitle">5. Relación con los Usuarios Finales</h3>
               <p>
-                En nuestra relación con los usuarios finales, Whitelabel SAS actúa como el responsable del tratamiento de datos personales recolectados mediante la plataforma Whitelabel. Sin embargo, es obligación del cliente garantizar que sus usuarios finales estén informados y hayan otorgado su consentimiento para el uso de sus datos según lo estipulado por la ley. Whitelabel SAS proporciona a sus clientes un modelo de aviso de privacidad que puede ser adaptado y compartido con los usuarios finales, asegurando así el cumplimiento de las normativas aplicables.
+                En los casos en que los clientes utilicen la plataforma Whitelabel para procesar datos de sus usuarios finales, éstos serán responsables de obtener los consentimientos correspondientes y cumplir con las obligaciones informativas de ley.
+              </p>
+              <p>
+                Whitelabel SAS, como encargado del tratamiento, sólo procesará dichos datos bajo las instrucciones del cliente y con fines técnicos o de prestación del servicio.
               </p>
 
-              <h3 className="legal-subtitle">6. Derechos de los titulares de datos</h3>
-              <p>De acuerdo con la Ley 1581 de 2012, los titulares de datos personales tienen los siguientes derechos:</p>
-              <ul className="legal-list">
-                <li><strong>Acceso:</strong> Conocer los datos personales que se encuentran en nuestras bases de datos.</li>
-                <li><strong>Rectificación:</strong> Solicitar correcciones en caso de que los datos sean inexactos o incompletos.</li>
-                <li><strong>Cancelación:</strong> Pedir la eliminación de datos cuando sea procedente.</li>
-                <li><strong>Oposición:</strong> Restringir o limitar el uso de sus datos personales en ciertas circunstancias.</li>
-              </ul>
-              <p>Para ejercer estos derechos, los titulares pueden contactarnos a través de:</p>
-              <ul className="legal-list">
-                <li><strong>Correo electrónico:</strong> hola@whitelabel.lat</li>
-                <li><strong>Teléfono:</strong> +57 311 253 0069</li>
-              </ul>
-              <p>Respondemos a todas las solicitudes relacionadas con estos derechos dentro de los plazos establecidos por la ley.</p>
-
-              <h3 className="legal-subtitle">7. Transferencia y conservación de datos</h3>
+              <h3 className="legal-subtitle">6. Conservación y Eliminación de Datos</h3>
               <p>
-                Conservamos los datos personales durante el tiempo necesario para cumplir con las finalidades del tratamiento. En el caso de una terminación de la relación contractual, los datos se mantendrán durante un período de 90 días, tras el cual serán eliminados de manera segura y definitiva, salvo disposición legal en contrario.
+                Los datos personales se conservarán únicamente durante el tiempo necesario para cumplir con las finalidades descritas. Al finalizar la relación contractual, los datos serán conservados por un máximo de <strong>90 días</strong>. Posteriormente, serán eliminados o anonimizados de manera segura, salvo que la ley exija su conservación por un período mayor.
+              </p>
+              <p>Whitelabel podrá conservar datos anonimizados con fines estadísticos o de mejora continua, sin posibilidad de identificación del titular.</p>
+
+              <h3 className="legal-subtitle">7. Transferencia y Transmisión Internacional de Datos</h3>
+              <p>
+                Whitelabel puede alojar o procesar datos en infraestructuras ubicadas fuera de Colombia, incluyendo servicios en <strong>AWS</strong>, <strong>Google Cloud</strong>, <strong>Vercel</strong>, <strong>Netlify</strong> y <strong>OpenAI</strong>.
+              </p>
+              <p>
+                Estas transferencias se realizan bajo cláusulas contractuales que garantizan un nivel adecuado de protección, conforme al artículo 26 de la Ley 1581 de 2012 y al artículo 44 del GDPR.
               </p>
 
-              <h3 className="legal-subtitle">8. Política de cookies</h3>
-              <p>Nuestra plataforma utiliza cookies con el objetivo de:</p>
+              <h3 className="legal-subtitle">8. Cookies y Tecnologías de Seguimiento</h3>
+              <p>La plataforma utiliza cookies para:</p>
               <ul className="legal-list">
-                <li>Brindar una experiencia personalizada a los usuarios.</li>
-                <li>Recopilar datos estadísticos sobre el uso de la plataforma.</li>
-                <li>Recordar configuraciones y preferencias del usuario.</li>
+                <li>Recordar preferencias de usuario.</li>
+                <li>Analizar métricas de uso y rendimiento.</li>
+                <li>Mantener sesiones seguras.</li>
               </ul>
               <p>
-                Los usuarios tienen la opción de gestionar y bloquear las cookies a través de la configuración de sus navegadores. La desactivación de cookies puede afectar algunas funcionalidades del servicio.
+                Los usuarios pueden gestionar o bloquear las cookies desde la configuración de su navegador. Sin embargo, su desactivación puede limitar la funcionalidad del servicio.
               </p>
 
-              <h3 className="legal-subtitle">9. Modificaciones a la política</h3>
+              <h3 className="legal-subtitle">9. Derechos de los Titulares</h3>
               <p>
-                Whitelabel SAS se reserva el derecho de modificar esta política de privacidad en cualquier momento. Los cambios serán comunicados a los clientes mediante correo electrónico y reflejados en la sección correspondiente dentro de la plataforma. El uso continuado de los servicios después de la notificación de los cambios implica la aceptación de dichas modificaciones.
+                Los titulares de datos personales pueden ejercer los derechos <strong>ARCO</strong> (Acceso, Rectificación, Cancelación y Oposición), junto con los derechos de <strong>portabilidad</strong> y <strong>revocatoria del consentimiento</strong>, en cualquier momento.
+              </p>
+              <p>Las solicitudes deberán enviarse a:</p>
+              <p>📧 <a href="mailto:legal@whitelabel.lat">legal@whitelabel.lat</a></p>
+              <p>Incluyendo:</p>
+              <ul className="legal-list">
+                <li>Identificación del titular.</li>
+                <li>Descripción precisa del derecho que desea ejercer.</li>
+                <li>Pruebas o anexos relevantes (si aplica).</li>
+              </ul>
+              <p>Whitelabel responderá dentro de los plazos establecidos por la Ley 1581 de 2012.</p>
+
+              <h3 className="legal-subtitle">10. Seguridad de la Información</h3>
+              <p>Implementamos medidas técnicas, físicas y administrativas de seguridad, incluyendo:</p>
+              <ul className="legal-list">
+                <li>Servidores dedicados protegidos por VPN.</li>
+                <li>Cifrado de datos en tránsito (TLS) y en reposo (AES-256).</li>
+                <li>Control de acceso y autenticación de doble factor.</li>
+                <li>Copias de respaldo cifradas y almacenamiento segregado.</li>
+                <li>Políticas internas de gestión de incidentes y brechas de seguridad.</li>
+              </ul>
+              <p>
+                En caso de incidente de seguridad que afecte datos personales, Whitelabel notificará oportunamente al titular y a la Superintendencia de Industria y Comercio (SIC) según corresponda.
               </p>
 
-              <h3 className="legal-subtitle">10. Legislación aplicable y jurisdicción</h3>
+              <h3 className="legal-subtitle">11. Atención de Solicitudes y Quejas</h3>
+              <p>El área de protección de datos de Whitelabel atenderá todas las solicitudes en los plazos legales:</p>
+              <ul className="legal-list">
+                <li>Consultas: 10 días hábiles.</li>
+                <li>Reclamos: 15 días hábiles.</li>
+              </ul>
               <p>
-                Esta política de privacidad se rige por la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia. Cualquier controversia derivada de su interpretación o aplicación será resuelta ante los tribunales competentes de Bogotá, Colombia.
+                Si el titular no recibe respuesta o no queda conforme, podrá acudir ante la Superintendencia de Industria y Comercio (SIC) para presentar una reclamación formal.
+              </p>
+
+              <h3 className="legal-subtitle">12. Modificaciones a esta Política</h3>
+              <p>
+                Whitelabel SAS se reserva el derecho de modificar esta Política de Privacidad en cualquier momento. Las actualizaciones serán notificadas por correo electrónico y publicadas en
+                {" "}
+                <a href="https://whitelabel.lat/privacidad" target="_blank" rel="noopener noreferrer">https://whitelabel.lat/privacidad</a>.
+              </p>
+              <p>El uso continuado del servicio después de la publicación implica la aceptación de los cambios.</p>
+
+              <h3 className="legal-subtitle">13. Ley Aplicable y Jurisdicción</h3>
+              <p>
+                Esta Política se rige por la legislación colombiana, en especial la Ley 1581 de 2012 y el Decreto 1377 de 2013. Cualquier controversia derivada será resuelta por los tribunales de Bogotá, Colombia, salvo pacto distinto entre las partes.
               </p>
             </article>
 
