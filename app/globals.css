@@ -115,3 +115,35 @@ body {
   overflow-x: clip !important; /* Evita scroll horizontal por subpíxeles/offsets negativos */
   overflow-y: visible !important; /* Mantener visibilidad vertical */
 }
+
+/* Tailwind (sin preflight) */
+@tailwind components;
+@tailwind utilities;
+
+/* Scoped resets mínimos para aislar el chat de overrides del template */
+@layer components {
+  .dgm-chat-wrap, .dgm-chat-wrap * {
+    box-sizing: border-box;
+  }
+  .dgm-chat-wrap {
+    /* asegurar tipografía y ritmo básicos dentro del contenedor */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 100%;
+    --muted-foreground: 220 9% 46%;
+    --input: 220 14% 95%;
+    --ring: 212 95% 64%;
+    --border: 220 14% 90%;
+  }
+  .dgm-chat-wrap input,
+  .dgm-chat-wrap textarea,
+  .dgm-chat-wrap button {
+    border-radius: 0.5rem;
+    outline: none;
+  }
+}

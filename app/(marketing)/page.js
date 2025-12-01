@@ -1,21 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import BackToTop from "./components/BackToTop";
-import Preloader from "./components/Preloader";
-import Header from "./components/Header";
-import Offcanvas from "./components/Offcanvas";
-import BodyOverlay from "./components/BodyOverlay";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Steps from "./components/Steps";
-import Brand from "./components/Brand";
-import Project from "./components/Project";
-// import Team from "./components/Team";
-import Testimonial from "./components/Testimonial";
-import Footer from "./components/Footer";
-import AnimationsProvider from "./components/AnimationsProvider";
-import ContactForm from "./components/ContactForm";
+import BackToTop from "../components/BackToTop";
+import Preloader from "../components/Preloader";
+import Header from "../components/Header";
+import Offcanvas from "../components/Offcanvas";
+import BodyOverlay from "../components/BodyOverlay";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Steps from "../components/Steps";
+import Brand from "../components/Brand";
+import Project from "../components/Project";
+// import Team from "../components/Team";
+import Testimonial from "../components/Testimonial";
+import Footer from "../components/Footer";
+import AnimationsProvider from "../components/AnimationsProvider";
+import ContactForm from "../components/ContactForm";
 
 export default function Page() {
   // eliminado: const [html, setHtml] = useState("");

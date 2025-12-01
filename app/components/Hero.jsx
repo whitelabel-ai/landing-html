@@ -1,7 +1,8 @@
 "use client";
 
 import Counter from "./Counter";
-import Chat from "./Chat";
+import dynamic from "next/dynamic";
+const Chat = dynamic(() => import("./Chat"), { ssr: false });
 
 export default function Hero() {
   return (
